@@ -30,10 +30,7 @@ const About = () => {
   return (
     <div id="about">
       {" "}
-      <h1
-        className="text-center pt-5"
-        style={{ fontSize: "60px", textShadow: "2px 3px 8px rgba(0,0,0,0.3)" }}
-      >
+      <h1 className="text-center pt-5">
         <span style={{ color: "navy" }}> Contact </span> Me
       </h1>
       <p className="text-center pt-5 sub-head">

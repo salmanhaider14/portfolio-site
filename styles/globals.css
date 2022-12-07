@@ -270,6 +270,10 @@ body {
 
   font-family: "Belleza", sans-serif;
 }
+#skills h1 {
+  font-size: 60px;
+  text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.3);
+}
 .frontend-container {
   display: flex;
   justify-content: center;
@@ -308,6 +312,10 @@ body {
   min-height: 70vh;
   font-family: "Belleza", sans-serif;
   position: relative;
+}
+#about h1 {
+  font-size: 60px;
+  text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.3);
 }
 #about .sub-head {
   font-size: 18px;
@@ -498,6 +506,19 @@ hr {
   #header {
     display: flex;
     gap: 1rem;
+  }
+  #services h1 {
+    font-size: 30px;
+  }
+
+  #work h1 {
+    font-size: 40px;
+  }
+  #skills h1 {
+    font-size: 40px;
+  }
+  #about h1 {
+    font-size: 40px;
   }
 }
 
