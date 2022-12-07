@@ -42,11 +42,10 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
+          <FaFacebook className="h3 me-3" color="navy" />
+          <FaInstagram className="h2 me-3" color="red" />
+          <FaYoutube className="h2 me-5" color="red" />
         </div>
-        
-        <FaFacebook className="h3 me-3" color = "navy" />
-        <FaInstagram  className="h2 me-3" color = 'red'/>
-        <FaYoutube className="h2 me-5" color = 'red'/>
       </div>
     </nav>
   );
