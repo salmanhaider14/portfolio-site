@@ -342,6 +342,7 @@ body {
   flex-wrap: wrap;
   gap: 5rem;
   /* margin-top: 10rem; */
+  padding: 1rem;
 }
 .about-para {
   font-size: 12px;
