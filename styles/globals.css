@@ -10,6 +10,7 @@ body {
   margin: 0;
   font-family: "Mate", serif;
   font-family: "Cinzel Decorative", cursive;
+  overflow-x: hidden;
 }
 
 * {
