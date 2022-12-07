@@ -499,16 +499,13 @@ hr {
   .credit {
     display: none;
   }
-  /* .sub-head {
-    position: absolute;
-    left: 10px;
-  } */
+
   #header {
     display: flex;
     gap: 1rem;
   }
   #services h1 {
-    font-size: 25px;
+    font-size: 30px;
   }
 
   #work h1 {
@@ -553,12 +550,12 @@ hr {
     width: 400px;
   }
 
-  #services h1 {
+  /* #services h1 {
     font-size: 35px;
   }
   #work h1 {
     font-size: 45px;
-  }
+  } */
   #about .sub-head {
     font-size: 18px;
     padding-top: 3rem;
