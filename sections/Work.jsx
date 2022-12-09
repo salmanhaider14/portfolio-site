@@ -35,18 +35,21 @@ const Work = ({ works }) => {
       <div className="work-container">
         <div className="work-cards">
           {projects?.map((project) => (
-            <div className="work-parent">
-              <div className="work-card">
-                <img src={urlFor(project.imgUrl)} alt="" />
+            <div className="work-card">
+              <img src={urlFor(project.imgUrl)} alt="" />
 
-                <h3 className="text-center pt-3">{project.title}</h3>
-                <p className="text-start ps-3 pt-3"> {project.description}</p>
-              </div>
-              <div className="work-back">
-                {" "}
-                <div className="work-hoverdata">
-                  <FaEye className="eye-icon" fontSize={40} color="white" />{" "}
-                </div>{" "}
+              <h3 className="text-center pt-3 fs-4">{project.title}</h3>
+              {/* <p className="text-start ps-3 pt-3"> {project.description}</p> */}
+              <div className="hover-data">
+                <button>
+                  <a
+                    href={project.projectLink}
+                    target={"_blank"}
+                    style={{ textDecoration: "none", color: "white" }}
+                  >
+                    View More
+                  </a>
+                </button>
               </div>
             </div>
           ))}
