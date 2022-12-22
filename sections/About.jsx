@@ -3,6 +3,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { AiFillMail } from "react-icons/ai";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
 
 const About = () => {
   const [name, setName] = useState("");
@@ -52,7 +53,13 @@ const About = () => {
       </div>
       <div className="contact-form">
         <div className="about-content">
-          <img src="/laptop.png" alt="" />
+          <motion.img
+            src="/laptop.png"
+            alt=""
+            initial={{ y: -20 }}
+            whileInView={{ y: 0 }}
+            transition={{ duration: 1 }}
+          />
           <p>
             I'm a full stack web developer , Android Apps & Game Developer. I
             have been coding for many years and I have built numerous projects.

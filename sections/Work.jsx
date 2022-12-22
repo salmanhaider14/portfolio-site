@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-
+import { motion } from "framer-motion";
 import { urlFor } from "../lib/client";
-import { FaEye } from "react-icons/fa";
 
 const Work = ({ works }) => {
   const [projects, setProjects] = useState(works);
@@ -33,7 +32,12 @@ const Work = ({ works }) => {
       </ul>
 
       <div className="work-container">
-        <div className="work-cards">
+        <motion.div
+          className="work-cards"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
           {projects?.map((project) => (
             <div className="work-card">
               <img src={urlFor(project.imgUrl)} alt="" />
@@ -53,7 +57,7 @@ const Work = ({ works }) => {
               </div>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
@@ -7,7 +8,12 @@ const Skills = () => {
         My Top <span style={{ color: "navy" }}>Skills</span>
       </h1>
 
-      <div className="skills-container">
+      <motion.div
+        className="skills-container"
+        initial={{ y: -60 }}
+        whileInView={{ y: 0 }}
+        transition={{ duration: 1 }}
+      >
         <div className="frontend-container">
           <h3>Frontend</h3>
           <ul>
@@ -94,7 +100,7 @@ const Skills = () => {
             </li>
           </ul>
         </div>
-      </div>
+      </motion.div>
       <p className="credit">
         @2022 Salman Haider <br></br> All Rights Reserved
       </p>

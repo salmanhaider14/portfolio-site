@@ -1,15 +1,26 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Services = () => {
   return (
     <div id="services">
-      <h1 className="text-center pt-5">
+      <motion.h1
+        className="text-center pt-5"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.5 }}
+      >
         <span style={{ color: "navy" }}> The Services</span> I Offer
-      </h1>
+      </motion.h1>
       <p className="text-center pt-5 sub-head ">
         ___________I never compromise on quality____________
       </p>
-      <div className="services-container">
+      <motion.div
+        className="services-container"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
         <div className="services-cards">
           <div className="service-card">
             <img src="/frontend.png" alt="" />
@@ -32,7 +43,7 @@ const Services = () => {
             </p>
           </div>
         </div>
-      </div>
+      </motion.div>
       <p className="credit">
         @2022 Salman Haider <br></br> All Rights Reserved
       </p>

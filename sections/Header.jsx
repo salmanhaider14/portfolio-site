@@ -1,10 +1,16 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
+import { motion } from "framer-motion";
 const Header = () => {
   return (
     <div id="header">
       <div className="header-container">
-        <div className="header-content">
+        <motion.div
+          className="header-content"
+          initial={{ y: -10 }}
+          whileInView={{ y: 0 }}
+          transition={{ duration: 1 }}
+        >
           <p style={{ color: "navy", fontWeight: "bold" }}>
             {" "}
             Web | Android | Games{" "}
@@ -31,9 +37,15 @@ const Header = () => {
               <FaYoutube fontSize={35} color="red" />
             </li>
           </ul>
-        </div>
+        </motion.div>
         <div>
-          <img src="/programmer.png" alt="" />
+          <motion.img
+            src="/programmer.png"
+            alt=""
+            initial={{ y: -10 }}
+            whileInView={{ y: 0 }}
+            transition={{ duration: 1 }}
+          />
         </div>
       </div>
 

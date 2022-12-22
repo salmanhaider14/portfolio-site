@@ -7,17 +7,23 @@ import {
   FaAngleUp,
 } from "react-icons/fa";
 import ScrollToTop from "react-scroll-to-top";
+import { motion } from "framer-motion";
 const Footer = () => {
   return (
     <div>
       <ScrollToTop smooth component={<FaAngleUp fontSize={30} />} />
       <div className="footer-container">
-        <div className="social">
+        <motion.div
+          className="social"
+          initial={{ y: -30 }}
+          whileInView={{ y: 0 }}
+          transition={{ duration: 1 }}
+        >
           <FaFacebook className="icon" />
           <FaInstagram className="icon" />
           <FaTwitter className="icon" />
           <FaYoutube className="icon" />
-        </div>
+        </motion.div>
         <ul>
           <li>
             <a href="#header">Services</a>
