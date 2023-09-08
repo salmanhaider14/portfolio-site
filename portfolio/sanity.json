@@ -5,7 +5,14 @@
   },
   "api": {
     "projectId": "x4f2ca6a",
-    "dataset": "production"
+    "dataset": "production",
+    "cors": [
+      {
+        "origin": "http://localhost:3000",
+        "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+        "credentials": true
+      }
+    ]
   },
   "plugins": [
     "@sanity/base",
@@ -15,9 +22,7 @@
   ],
   "env": {
     "development": {
-      "plugins": [
-        "@sanity/vision"
-      ]
+      "plugins": ["@sanity/vision"]
     }
   },
   "parts": [

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { urlFor } from "../lib/client";
+import { FaEye, FaCode } from "react-icons/fa";
 
 const Work = ({ works }) => {
   const [projects, setProjects] = useState(works);
@@ -44,16 +45,58 @@ const Work = ({ works }) => {
 
               <h3 className="text-center pt-3 fs-4">{project.title}</h3>
               {/* <p className="text-start ps-3 pt-3"> {project.description}</p> */}
-              <div className="hover-data">
-                <button>
+              <div className="hover-data ">
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    gap: "2rem",
+                  }}
+                >
                   <a
                     href={project.projectLink}
-                    target={"_blank"}
-                    style={{ textDecoration: "none", color: "white" }}
+                    target="_blank"
+                    style={{
+                      textDecoration: "none",
+                      color: "white",
+                      width: "50px",
+                      height: "50px",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      borderRadius: "50%",
+                      backgroundColor: "white",
+                      boxShadow: "2px 3px 8px rgba(0, 0, 0, 0.3)",
+                      marginTop: "1rem",
+                    }}
                   >
-                    View More
+                    <FaEye
+                      size={35}
+                      color="black"
+                      // Adjust the icon's position if needed
+                    />
                   </a>
-                </button>
+
+                  <a
+                    href={project.codeLink}
+                    target="_blank"
+                    style={{
+                      textDecoration: "none",
+                      color: "white",
+                      width: "50px",
+                      height: "50px",
+                      display: "flex",
+                      justifyContent: "center",
+                      alignItems: "center",
+                      borderRadius: "50%",
+                      backgroundColor: "white",
+                      boxShadow: "2px 3px 8px rgba(0, 0, 0, 0.3)",
+                      marginTop: "1rem",
+                    }}
+                  >
+                    <FaCode size={35} color="blue" />
+                  </a>
+                </div>
               </div>
             </div>
           ))}
