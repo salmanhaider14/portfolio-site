@@ -54,7 +54,7 @@ const Navbar = () => {
           >
             <FaFacebook className="h2 me-3" color="navy" />
           </a>
-          <a href="https://github.com/salmanhaider14" target="_blank">
+          <a href="https://github.com/salmanhaider14/" target="_blank">
             {" "}
             <FaGithub className="h2 me-3" color="black" />{" "}
           </a>
