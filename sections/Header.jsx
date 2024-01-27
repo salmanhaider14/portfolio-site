@@ -1,5 +1,11 @@
 import React from "react";
-import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaYoutube,
+} from "react-icons/fa";
 import { motion } from "framer-motion";
 const Header = () => {
   return (
@@ -27,14 +33,28 @@ const Header = () => {
           <ul>
             <li>
               {" "}
-              <FaFacebook fontSize={35} color="navy" />
+              <a
+                href="https://web.facebook.com/profile.php?id=100049396515197"
+                target="_blank"
+              >
+                <FaFacebook fontSize={35} color="navy" />
+              </a>
             </li>
 
             <li>
-              <FaInstagram fontSize={35} color="red" />
+              <a href="https://github.com/salmanhaider14" target="_blank">
+                {" "}
+                <FaGithub fontSize={35} color="black" />{" "}
+              </a>
             </li>
             <li>
-              <FaYoutube fontSize={35} color="red" />
+              <a
+                href="https://www.linkedin.com/in/salman-patrick/"
+                target="_blank"
+              >
+                {" "}
+                <FaLinkedin fontSize={35} color="blue" />
+              </a>
             </li>
           </ul>
         </motion.div>

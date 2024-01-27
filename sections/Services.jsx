@@ -44,9 +44,9 @@ const Services = () => {
           </div>
         </div>
       </motion.div>
-      <p className="credit">
+      {/* <p className="credit">
         @2022 Salman Haider <br></br> All Rights Reserved
-      </p>
+      </p> */}
     </div>
   );
 };

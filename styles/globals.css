@@ -19,7 +19,7 @@ body {
 
 #header {
   min-height: 100vh;
-  background-image: url("../public/PortfolioHeader.png");
+  background-image: url("/PortfolioHeader.png");
   background-size: cover;
   font-family: "Belleza", sans-serif;
 }
@@ -91,7 +91,7 @@ body {
   min-height: 100vh;
   position: relative;
   background-color: #f9f9f9;
-  background-image: url("../public/bluewavebg.jpg");
+  background-image: url("/bluewavebg.jpg");
   background-size: cover;
 }
 .credit {

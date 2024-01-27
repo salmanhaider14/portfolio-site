@@ -102,7 +102,7 @@ const Skills = () => {
         </div>
       </motion.div>
       <p className="credit">
-        @2022 Salman Haider <br></br> All Rights Reserved
+        @2024 Salman Haider <br></br> All Rights Reserved
       </p>
     </div>
   );

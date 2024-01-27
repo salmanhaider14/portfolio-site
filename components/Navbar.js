@@ -1,5 +1,11 @@
 import React from "react";
-import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaYoutube,
+} from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -42,9 +48,20 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
-          <FaFacebook className="h3 me-3" color="navy" />
-          <FaInstagram className="h2 me-3" color="red" />
-          <FaYoutube className="h2 me-5" color="red" />
+          <a
+            href="https://web.facebook.com/profile.php?id=100049396515197"
+            target="_blank"
+          >
+            <FaFacebook className="h2 me-3" color="navy" />
+          </a>
+          <a href="https://github.com/salmanhaider14" target="_blank">
+            {" "}
+            <FaGithub className="h2 me-3" color="black" />{" "}
+          </a>
+          <a href="https://www.linkedin.com/in/salman-patrick/" target="_blank">
+            {" "}
+            <FaLinkedin className="h2 me-5" color="blue" />
+          </a>
         </div>
       </div>
     </nav>

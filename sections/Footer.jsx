@@ -5,6 +5,8 @@ import {
   FaTwitter,
   FaYoutube,
   FaAngleUp,
+  FaGithub,
+  FaLinkedin,
 } from "react-icons/fa";
 import ScrollToTop from "react-scroll-to-top";
 import { motion } from "framer-motion";
@@ -19,10 +21,19 @@ const Footer = () => {
           whileInView={{ y: 0 }}
           transition={{ duration: 1 }}
         >
-          <FaFacebook className="icon" />
-          <FaInstagram className="icon" />
-          <FaTwitter className="icon" />
-          <FaYoutube className="icon" />
+          <a
+            href="https://web.facebook.com/profile.php?id=100049396515197"
+            target="_blank"
+          >
+            <FaFacebook className="icon" color="white" />
+          </a>
+          <a href="https://github.com/salmanhaider14" target="_blank">
+            <FaGithub className="icon" color="white" />
+          </a>
+          <a href="https://www.linkedin.com/in/salman-patrick/" target="_blank">
+            <FaLinkedin className="icon" color="white" />
+          </a>
+          {/* <FaTwitter className="icon" /> */}
         </motion.div>
         <ul>
           <li>
@@ -38,7 +49,7 @@ const Footer = () => {
             <a href="#about">About </a>
           </li>
         </ul>
-        <h1>Copyright @ 2022 Salman Haider</h1>
+        <h1>Copyright @ 2024 Salman Haider</h1>
       </div>
     </div>
   );
