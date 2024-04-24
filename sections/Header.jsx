@@ -26,9 +26,12 @@ const Header = () => {
             <span style={{ color: "navy" }}>Salman Haider</span>
           </h1>
 
-          <p>
-            I'm a full stack web developer , Android Apps & Game Developer. I
-            have been coding for many years and I have built numerous projects.
+          <p style={{ lineHeight: "25px", fontSize: "22px" }}>
+            a full-stack web developer and mobile app/game developer with a
+            passion for building fast, scalable, and efficient solutions. With a
+            strong background in coding and a commitment to staying up-to-date
+            with the latest technologies, I'm always looking for new
+            opportunities to grow and learn.
           </p>
           <ul>
             <li>

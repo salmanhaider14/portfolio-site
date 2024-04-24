@@ -33,6 +33,9 @@ const Skills = () => {
               <img src="/next.png" alt="html" width={50} />
             </li>
             <li>
+              <img src="/tailwind.png" alt="html" width={50} />
+            </li>
+            <li>
               <img src="/bootstrap.png" alt="html" width={80} />
             </li>
           </ul>
@@ -46,6 +49,9 @@ const Skills = () => {
             </li>
             <li>
               <img src="/node.png" alt="html" width={50} />
+            </li>
+            <li>
+              <img src="/dotnet.png" alt="html" width={50} />
             </li>
             <li>
               <img src="/mongo.png" alt="html" width={50} />
@@ -101,9 +107,6 @@ const Skills = () => {
           </ul>
         </div>
       </motion.div>
-      <p className="credit">
-        @2024 Salman Haider <br></br> All Rights Reserved
-      </p>
     </div>
   );
 };
