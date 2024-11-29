@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+
 import { FaPhoneAlt } from "react-icons/fa";
 import { AiFillMail } from "react-icons/ai";
 import { useState } from "react";
@@ -37,7 +38,7 @@ const About = () => {
       <p className="text-center pt-5 sub-head">
         ______________Available everytime________________
       </p>
-      <div className="contact-info">
+      {/* <div className="contact-info">
         <div>
           <FaPhoneAlt fontSize={20} color="green" />{" "}
           <input className="info-btn" defaultValue="+923078331012" />
@@ -50,7 +51,7 @@ const About = () => {
             defaultValue={"salmanpatrick5@gmail.com"}
           />
         </div>
-      </div>
+      </div> */}
       <div className="contact-form">
         <div className="about-content">
           <motion.img
@@ -60,10 +61,10 @@ const About = () => {
             whileInView={{ y: 0 }}
             transition={{ duration: 1 }}
           />
-          <p>
+          {/* <p>
             I'm a full stack web developer , Android Apps & Game Developer. I
             have been coding for many years and I have built numerous projects.
-          </p>
+          </p> */}
         </div>
         <form on onSubmit={handleSubmit}>
           <input
@@ -81,7 +82,7 @@ const About = () => {
             placeholder="Your Message"
             onChange={(e) => setMsg(e.target.value)}
           />
-          <button>Send Message</button>
+          <button>Send Mail</button>
         </form>
       </div>
     </div>

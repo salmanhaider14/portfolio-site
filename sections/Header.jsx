@@ -1,12 +1,7 @@
+"use client";
 import React from "react";
-import {
-  FaFacebook,
-  FaGithub,
-  FaInstagram,
-  FaLinkedin,
-  FaYoutube,
-} from "react-icons/fa";
 import { motion } from "framer-motion";
+import SocialIcons from "../components/SocialIcons";
 const Header = () => {
   return (
     <div id="header">
@@ -27,38 +22,14 @@ const Header = () => {
           </h1>
 
           <p style={{ lineHeight: "25px", fontSize: "22px" }}>
-            a full-stack web developer and mobile app/game developer with a
-            passion for building fast, scalable, and efficient solutions. With a
-            strong background in coding and a commitment to staying up-to-date
-            with the latest technologies, I'm always looking for new
-            opportunities to grow and learn.
+            A versatile software developer, driven by a passion for crafting
+            fast, scalable, and efficient solutions. With a solid foundation in
+            coding and a dedication to mastering emerging technologies, I thrive
+            on solving challenges and embracing opportunities for growth and
+            innovation.
           </p>
           <ul>
-            <li>
-              {" "}
-              <a
-                href="https://web.facebook.com/profile.php?id=100049396515197"
-                target="_blank"
-              >
-                <FaFacebook fontSize={35} color="navy" />
-              </a>
-            </li>
-
-            <li>
-              <a href="https://github.com/salmanhaider14" target="_blank">
-                {" "}
-                <FaGithub fontSize={35} color="black" />{" "}
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/salman-patrick/"
-                target="_blank"
-              >
-                {" "}
-                <FaLinkedin fontSize={35} color="blue" />
-              </a>
-            </li>
+            <SocialIcons />
           </ul>
         </motion.div>
         <div>
@@ -71,9 +42,6 @@ const Header = () => {
           />
         </div>
       </div>
-
-      {/* 
-     <img src="/meme.png" className="meme" alt = "" /> */}
     </div>
   );
 };
