@@ -66,7 +66,7 @@ const About = () => {
             have been coding for many years and I have built numerous projects.
           </p> */}
         </div>
-        <form on onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}>
           <input
             type="text"
             placeholder="Your Name"
