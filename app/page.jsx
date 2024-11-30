@@ -13,7 +13,7 @@ export const metadata = {
 };
 const Home = async () => {
   const query = '*[_type == "works"]';
-  const projects = await client.fetch(query);
+  const projects = await client.fetch(query, { cache: "no-store" });
   return (
     <div>
       <Header />
